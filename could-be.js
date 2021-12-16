@@ -28,7 +28,7 @@ let couldBeLayer;
   
 
   couldBeLayer = L.featureGroup(couldBeFeatures.map(function(feature){
-    return L.marker(feature.latLng);
+    return L.circleMarker(feature.latLng);
     })
   )
 
@@ -41,23 +41,27 @@ let couldBeLayer;
 
 let md;
 md = window.markdownit({html: true}).use(window.markdownitFootnote);
-
-["hastings-street", "eighteenth-and-vine", "fifth-and-mound", "introduction", "lenox-avenue", "rampart"].forEach(function(tab){
+// Load the Markdown file with jQuery.
+["Dads-Grave", "Route-one-fifty", "House-Raised", "introduction", "Farm-Born"].forEach(function(tab){
   // Create a variable tab that has the name as a string.
+let urlString = "https://raw.githubusercontent.com/cordonc/markdownFile/main/"
 
-})
 $.ajax({
-
-  url: "https://the-javascripting-english-major.org/v1/examples/markdown/hastings-street.md",
+  url: urlString + tab,
   success: function(markdown){
     // Convert the Markdown to HTML.
     let html;
     html = md.render(markdown);
+    // Print the HTML to #content using jQuery.
     // "#rampart", for example.
+    console.log(html)
     $("#" + tab).html(html);
-  }
+    }
+  });
 });
 
+
+/*
 $.ajax({
   url: "https://the-javascripting-english-major.org/v1/examples/markdown/poem.md",
   success: function(poem){
@@ -71,4 +75,4 @@ $.ajax({
     return newHtml;
   });
   }
-});
+}); */ 
