@@ -1,0 +1,49 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.582044,41.07272 ]
+    },
+    "properties": {
+    "name":"North-East of Creek",
+    "Note":"House on Maple Ave"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.56941,41.07089 ]
+    },
+    "properties": {
+    "name":"Hays-Fearon Cemetary",
+    "Note":"Burial Spot"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.585024,41.078837 ]
+    },
+    "properties": {
+    "name":"Farm where he's born",
+    "Note":"Birth Place"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.553363,41.08293 ]
+    },
+    "properties": {
+    "name":"The Spot on Route 50 where he died, near an old farmhouse he was restoring.",
+    "Note":"Death Place"
+    }
+  }
+]
+}
